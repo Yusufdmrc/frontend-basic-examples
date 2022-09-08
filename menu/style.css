@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #f3f3f3;
+}
+
+.menu{
+    height: 100px;
+    padding: 20px;
+    background: #6ab9d1;
+    color: #fff;
+}
+
+.menu .logo{
+    line-height: 65px;
+    float: left;
+    cursor: pointer;
+}
+
+.bar{
+    float: right;
+    line-height: 100px;
+}
+
+.bar a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 50px;
+    transition: 0.7s;
+}
+
+.bar a:hover{
+    background: #333;
+    border-radius: 20px;           
+}
+
+.menu-btn , .hide-menu-btn{
+    transition: 0.4s;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.menu-btn{
+    float: right;
+}
+
+.menu-btn i{
+    line-height: 100%;
+    padding: 35px 0;
+}
+
+.menu a:hover,
+.menu-btn:hover,
+.hide-menu-btn:hover{
+    color:#e26d00
+}
+
+#chb{
+    position: absolute;
+    visibility: hidden;
+}
+
+@media screen and (max-width:800px) {
+    .menu-btn , .hide-menu-btn{
+        display: block;
+    }
+    .bar{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        right: -100%;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+
+.bar a{
+    display: block;
+    padding: 20px;
+}
+
+.hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+   
+}
+
+#chb:checked ~.bar{
+    right: 0;
+    
+}
+}

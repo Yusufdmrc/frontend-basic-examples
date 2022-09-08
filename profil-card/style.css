@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;  
+}
+
+.card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card-header{
+    background: #66a3a5;    
+    padding: 60px 40px;
+    border-radius: 5px;
+}
+
+.image img{
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.image{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg,#66a3a5,#fff);
+    margin: auto;
+    border-radius: 50%;
+    animation: animation 5s linear infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes animation{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.name{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: all ease 1s;
+}
+
+.name:hover{
+    color: black;
+}
+
+.job{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px 0;
+    transition: all ease 1s;
+}
+
+.job:hover{
+    color: black;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.icon a{
+    color: #fff;
+    width: 35px;
+    font-size: 20px;
+    transition: all ease 1s;
+}
+
+.icon a:hover{
+    color: black;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 40px;
+    color: black;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin-top: 16px;
+    transition: all ease 2s;
+}
+
+.btn:hover{
+    color: #fff;
+    background:#66a3a5;
+}
+
+.card-footer{
+    background-color: black;
+    padding: 40px 30px;
+    border-radius: 5px;
+}
+
+.card-footer .statistics    {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.item{
+    flex: 1;
+    font-size: 15px;
+}
+
+.item span{
+    display: block;
+    font-size: 30px;
+}

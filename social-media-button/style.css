@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background: #f1f1f1;
+}
+
+.social-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.social-icon div{
+    display: inline;
+}
+
+.social-icon div a{
+    width: 85px;
+    height: 85px;
+    display:inline-flex;
+    background: #2c3e50;
+    font-size: 45px;
+    color: #fff;
+    margin: 0 5px;
+    border-radius: 52%;
+    justify-content: center; /*yatayda ortalama*/
+    align-items: center;/*dikeyde ortalama*/
+}
+
+.social-icon .facebook a:hover{
+    background: #1877f2;
+}
+.social-icon .reddit a:hover{
+    background:  #ff4500;
+}
+.social-icon .twitter a:hover{
+    background: #1da1f2;
+}
+.social-icon .youtube a:hover{
+    background: #ff0000;
+}
+.social-icon .spotify a:hover{
+    background: #1ed760;
+}
+.social-icon .telegram a:hover{
+    background: #0088cc;
+}
+.social-icon .instagram a:hover{
+    background: #c32aa3;
+}
+.social-icon .snapchat a:hover{
+    background: #fffc00;
+}
+
+.social-icon .google a:hover{
+    background: #4285f4;
+}
+
+.social-icon .linkedin a:hover{
+    background: #0a66c2;
+}
+
+.social-icon a i{
+    transition: all ease 0.5s;
+}
+
+.social-icon a:hover > i {
+    transform: scale(1.2) rotate(360deg);
+}
+

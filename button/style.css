@@ -1,0 +1,98 @@
+body{
+    background: rgb(185, 184, 184);
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+   background: #ffc107;
+   width: 200px;
+   height: 60px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   border-radius: 5px;
+   cursor: pointer;
+
+}
+
+.btn::before{
+    content: 'İnsanlar';
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn:hover::before{
+    top: -30px;
+}
+
+.btn::after{
+    font-family: 'Ionicons';
+    content: '\f141';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+    top: 140%;
+    font-size: 30px;
+    transition: all;
+    transition: all 0.5s;
+}
+
+.btn:hover::after{
+    top: 50%;
+}
+
+.btn-2{
+    background: red;
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+}
+
+.btn-2::before{
+    content: 'Ben';
+    color:#fff;
+    font-family: sans-serif;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.btn-2:hover::before{
+    top: -30px;
+}
+
+.btn-2::after{
+    font-family: 'Ionicons';
+    content: '\f31d';
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    top: 140%;
+    font-size: 30px;
+    transition: all;
+    transition: all 0.5s;
+}
+
+.btn-2:hover::after{
+    top: 50%;
+}

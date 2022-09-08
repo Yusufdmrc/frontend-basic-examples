@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    
+}
+
+a{
+    color: white;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    height: 100px;
+    border-bottom: 3px solid rgba(255, 255, 255,0.07);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+header nav .menu ul{
+    list-style: none;
+    display: flex;
+    column-gap: 35px;
+}
+
+header nav .menu ul li a{
+    color: #fff;
+    transition: all ease 2s;
+}
+
+header nav .menu ul li a:hover{
+    color:#0ba2c0;
+}
+
+header nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+header .menu .menu-btn{
+     color: #0ba2c0;
+     background-color: rgba(255, 255, 255, 0.09);
+     border-radius: 50px;
+     padding: 12px 24px;
+     transition: all ease 1.5s;
+     
+}
+
+header .menu .menu-btn:hover{
+    background-color: #0ba2c0;
+    color: #fff;
+}
+
+.content{
+    color: white;
+    height: calc(100vh-100px);
+    padding-top: 150px;
+}
+
+.content h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.content p{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content .button{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    column-gap: 16px;
+}
+
+.content .button a{
+    background-color: #fff;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 55px;
+    transition: all ease 2s;
+}
+
+.content .button a:hover{
+    background-color: #0ba2c0;
+    color: white;
+}
+
+@media(max-widht:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu ul{
+        column-gap: 20px;
+    }
+
+    .menu .menu-btn{
+        display: none;
+    }
+
+    .content{
+        padding-top: 50px;
+    }
+
+    .content h1{
+        font-size: 36px;
+    }
+
+    .content p{
+        font-size: 16px;
+    }
+
+    .content .button{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .content .button a{
+        padding: 14px;
+        width: 90%;
+    }
+}
